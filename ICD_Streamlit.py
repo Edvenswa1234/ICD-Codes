@@ -1,6 +1,6 @@
 import streamlit as st
 import torch
-from unsloth import FastLanguageModel
+from fastllm import FastLanguageModel
 from transformers import AutoTokenizer
 
 # Load the model and tokenizer
@@ -76,5 +76,5 @@ if st.button("Get ICD Codes"):
 
 # Footer
 st.markdown("---")
-st.markdown("🚀 Built with **Streamlit** & **Unsloth** | [GitHub](https://github.com/)")
+st.markdown("🚀 Built with **Streamlit** | [GitHub](https://github.com/)")
 

@@ -16,7 +16,7 @@ def load_model():
         max_seq_length=max_seq_length,
         dtype=dtype,
         load_in_4bit=load_in_4bit,
-        token="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"  # Add HUGGINGFACE_TOKEN if needed
+        token=None  # Add HUGGINGFACE_TOKEN if needed
     )
     FastLanguageModel.for_inference(model)
     return model, tokenizer
